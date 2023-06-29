@@ -10,8 +10,8 @@ class Question
     "What is #{@number_a} + #{@number_b}?"
   end
 
-  def check_answer
-    answer.to_i = @answer
+  def check_answer(answer)
+    answer.to_i == @answer
   end
 
 end
