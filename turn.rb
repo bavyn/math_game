@@ -5,7 +5,7 @@ class Turn
     @question = question
   end
 
-  def game_turn
+  def play_turn
     @question.generate_question
     puts '#{@current_player.name}: #{@question}'
 
