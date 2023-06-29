@@ -7,11 +7,12 @@ class Game
 
   def start_game
     loop do
+      puts "----- NEW TURN -----"
     # define turn as a new Turn with current player and new question
-    turn = Turn.new(@current_player, Question.new)
-    turn.play_turn
+      turn = Turn.new(@current_player, Question.new)
+      turn.play_turn
     # if the game is over, break
-    break if game_over?
+      break if game_over?
     # switch turn
       switch_turn
     end
@@ -45,8 +46,8 @@ class Game
 
   def display_scores
     puts 'Final scores: '
-    puts "#{p1.name}: #{p1.score}"
-    puts "#{p2.name}: #{p2.score}"
+    puts "#{@p1.name}: #{@p1.score}"
+    puts "#{@p2.name}: #{@p2.score}"
   end
 
 end
