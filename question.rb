@@ -5,4 +5,8 @@ class Question
     @answer = @number_a + @number_b
   end
 
+  def check_answer
+    answer.to_i = @answer
+  end
+
 end
