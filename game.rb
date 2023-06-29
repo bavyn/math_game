@@ -25,11 +25,16 @@ class Game
     # define loser as the person who does have 0 lives
 
     puts "----- GAME OVER -----"
-    puts "#{winner.name} wins with a score of #{winner.score}"
+    puts "#{winner.name} wins!!"
+    display_scores
     puts "Good bye!"
 
   end
 
-
+  def display_scores
+    puts 'Final scores: '
+    puts "#{p1.name}: #{p1.score}"
+    puts "#{p2.name}: #{p2.score}"
+  end
 
 end
