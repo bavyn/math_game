@@ -7,8 +7,7 @@ class Turn
 
   def play_turn
     @question.generate_question
-    puts '#{@current_player.name}: #{@question}'
-
+    puts "#{@current_player.name}: #{@question}"
     answer = gets.chomp
 
     if @question.check_answer(answer)
